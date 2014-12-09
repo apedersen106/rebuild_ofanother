@@ -1,17 +1,119 @@
+html{
+    background-color: #fff;
+}
+
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box; 
+}
 
- body {
+/* BODY/GENERAL */
+
+body {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   font-style: normal;
   line-height: 26px;
-  color: #444444;
-  background-color: #fff;
+  color: #444;
+  margin: 0 auto;
+}
 
-.sample_image {
-	zoom 0.5;
-	display: block;
+/* NAVIGATION */
+
+.logo {
+  float: left;
+}
+
+.active {
+  font-weight: bold;
+  color: #444;
+}
+
+nav ul {
+  float: left;
+  width: 25%;
+  list-style: none;
+  margin: 3em 0em 1.5em 0em;
+  padding: 0em;
+}
+
+nav ul li {
+  margin: 0em 1.5em 0em 0em;
+  padding: 0em;
+  display: inline-block;
+}
+
+nav a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #444;
+}
+
+nav h1 {
+  float: right;
+  width: 50%;
+  margin: 0em;
+  padding: 0.75em;
+}
+
+
+/* MAIN */
+
+section.projects_all {
+  clear: both;
+}
+
+section.projects_all a img {
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+section.projects_all a {
+  border: none;
+}
+
+section.projects_all a strong {
+  position: relative;
+  padding: 1em 0em 0em 2em;
+  display: block;
+  font-weight: bold;
+}
+
+#proj_thumb_1 {
+  background-image: url(img/tgd.jpg);
+  background-repeat: no-repeat;
+  height: 100px;
+}
+
+/* FOOTER */
+
+footer {
+  clear: both;
+  display: block;
+  color: #aaa;
+  padding: 0.5em 1.5em;
+}
+
+footer p {
+  float: left;
+  width: 25%;
+}
+
+footer a {
+  float: right;
+  width: 75%;
+  margin: 0em;
+  color: #aaa;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #444;
+  border-bottom: 1px solid #444;
 }
